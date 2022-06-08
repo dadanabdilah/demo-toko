@@ -1,0 +1,10 @@
+- Data Karyawan(Create,Update,Delete)
+- Data Pembelian (Input Data Pembelian)
+
+- Data Barang (Create, Update, Delete)
+- Data Penjualan (CRUD,Import data penjualan dari toko online)
+- Laporan
+        -> Lap. Gudang          -> stok opname, lap persedian
+        -> Lap. Pembelian 
+        -> Lap. Penjualan
+        -> Lap. Keuntungan
