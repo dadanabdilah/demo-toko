@@ -1,0 +1,35 @@
+======================= Fitur =======================
+- Data Karyawan(Create,Update,Delete)
+- Data Pembelian (Input Data Pembelian)
+- Data Barang (Create, Update, Delete)
+- Data Penjualan (CRUD,Import data penjualan dari toko online)
+- Laporan
+        -> Lap. Gudang          -> stok opname, lap persedian
+        -> Lap. Pembelian 
+        -> Lap. Penjualan
+        -> Lap. Keuntungan      -> pendapatan penjualan - (biaya operasional + harga beli)
+
+Fitur Tambahan
+-> Import Data Excel Ke Database (Kompare data Excel dan Data Pada Database)
+-> Hitung Bonus CS dan Peng Iklan
+
+============== Pembagian Hak Akses ===========
+#Owner
+- Data Pembelian (Input Data Pembelian)
+- Data Barang (Create, Update, Delete)
+- Laporan (Lap. Gudang)
+        (Lap. Pembelian) 
+        (Lap. Penjualan)
+        (Lap. Keuntungan)
+           
+#Admin
+- Data Barang (Ubah Harga Jual)
+- Data Karyawan(Create,Update,Delete)
+- Data Penjualan (CRUD, Import data penjualan dari toko online)
+
+
+Pengguna Terlibat
+#Customer Service
+- Serahkan Data Penjualan Dari Toko Online Ke Admin
+#Peng Iklan
+- Serahkan Data Penjualan Dari Toko Online Admin
