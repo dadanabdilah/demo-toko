@@ -9,9 +9,12 @@
         -> Lap. Penjualan
         -> Lap. Keuntungan      -> pendapatan penjualan - (biaya operasional + harga beli)
 
+
 Fitur Tambahan
 -> Import Data Excel Ke Database (Kompare data Excel dan Data Pada Database)
 -> Hitung Bonus CS dan Peng Iklan
+
+
 
 ============== Pembagian Hak Akses ===========
 #Owner
