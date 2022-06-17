@@ -4,7 +4,7 @@
 - Penggajian (Hitung Gaji Karyawan) -> poko+bonus
 - Data Barang (Create, Update, Delete)
 - Data Penjualan (CRUD,Import data penjualan dari toko online)
-- Data Pengaturan (CRUF) -> pengaturan gaji pokok cs dan peng iklan, pengaturan nama aplikasi
+- Data Pengaturan (CRUD) -> pengaturan gaji pokok cs dan peng iklan, pengaturan nama aplikasi
 - Laporan
         -> Lap. Gudang          -> stok opname, lap persedian
         -> Lap. Pembelian 
@@ -23,6 +23,7 @@ Fitur Tambahan
 - Data Pembelian (Input Data Pembelian)
 - Data Barang (Create, Update, Delete)
 - Penggajian (Hitung Gaji Karyawan) -> poko+bonus
+- Data Pengaturan (CRUD) -> pengaturan gaji pokok cs dan peng iklan, pengaturan nama aplikasi
 - Laporan
         (Lap. Gudang)
         (Lap. Pembelian) 
