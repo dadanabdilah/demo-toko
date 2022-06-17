@@ -1,8 +1,10 @@
 ======================= Fitur =======================
-- Data Karyawan(Create,Update,Delete)
+- Data Karyawan(CRUD)
 - Data Pembelian (Input Data Pembelian)
+- Penggajian (Hitung Gaji Karyawan) -> poko+bonus
 - Data Barang (Create, Update, Delete)
 - Data Penjualan (CRUD,Import data penjualan dari toko online)
+- Data Pengaturan (CRUF) -> pengaturan gaji pokok cs dan peng iklan, pengaturan nama aplikasi
 - Laporan
         -> Lap. Gudang          -> stok opname, lap persedian
         -> Lap. Pembelian 
@@ -20,7 +22,9 @@ Fitur Tambahan
 #Owner
 - Data Pembelian (Input Data Pembelian)
 - Data Barang (Create, Update, Delete)
-- Laporan (Lap. Gudang)
+- Penggajian (Hitung Gaji Karyawan) -> poko+bonus
+- Laporan
+        (Lap. Gudang)
         (Lap. Pembelian) 
         (Lap. Penjualan)
         (Lap. Keuntungan)
