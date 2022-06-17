@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="favicon.ico">
-  <title>Data Karyawan | Dashboard</title>
+  <title>Data Barang | Dashboard</title>
 
   <!-- Simple bar CSS -->
   <link rel="stylesheet" href="../assets/css/simplebar.css">
@@ -189,9 +189,8 @@
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-12">
-            <h2 class="mb-2 page-title">Data Karyawan</h2>
-            <button type="button" class="btn mb-2 btn-primary" data-toggle="modal" data-target="#addModal">Tambah
-              Karyawan
+            <h2 class="mb-2 page-title">Data Barang</h2>
+            <button type="button" class="btn mb-2 btn-primary" data-toggle="modal" data-target="#addModal">Tambah Barang
               +</button>
             <div class="row my-4">
               <!-- Small table -->
@@ -203,26 +202,22 @@
                       <thead>
                         <tr>
                           <th>#</th>
-                          <th>Nama</th>
-                          <th>Jabatan</th>
-                          <th>No. Telfon</th>
-                          <th>Jenis Kelamin</th>
-                          <th>Alamat</th>
-                          <th>Tanggal Lahir</th>
-                          <th>Tanggal Mulai Bekerja</th>
+                          <th>Kode Barang</th>
+                          <th>Nama Barang</th>
+                          <th>Stok</th>
+                          <th>Harga Beli</th>
+                          <th>Harga Jual</th>
                           <th>Aksi</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <td>368</td>
-                          <td>Imani Lara</td>
-                          <td>Owner</td>
-                          <td>(478) 446-9234</td>
-                          <td>Laki-Laki</td>
-                          <td>9022 Suspendisse Rd.</td>
-                          <td>Jun 8, 2000</td>
-                          <td>Jun 8, 2000</td>
+                          <td>BRG-000001</td>
+                          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                          <td>100</td>
+                          <td>2000</td>
+                          <td>3000</td>
                           <td><button class="btn btn-sm dropdown-toggle more-horizontal" type="button"
                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               <span class="text-muted sr-only">Action</span>
@@ -242,6 +237,7 @@
           </div> <!-- .col-12 -->
         </div> <!-- .row -->
       </div> <!-- .container-fluid -->
+
       <!-- Modal -->
       <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalTitle"
         aria-hidden="true">
@@ -256,57 +252,30 @@
             <div class="modal-body">
               <form>
                 <div class="form-group row">
-                  <label for="inputNamaKaryawan" class="col-sm-3 col-form-label">Nama Karyawan</label>
+                  <label for="inputNamaBarang" class="col-sm-3 col-form-label">Nama Barang</label>
                   <div class="col-sm-9">
-                    <input type="text" name="nama_karyawan" class="form-control" id="inputNamaKaryawan"
-                      placeholder="Nama Karyawan" required>
+                    <input type="text" name="nama_barang" class="form-control" id="inputNamaBarang"
+                      placeholder="Nama Barang" required>
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="inputJabatan" class="col-sm-3 col-form-label">Jabatan</label>
+                  <label for="inputStok" class="col-sm-3 col-form-label">Stok</label>
                   <div class="col-sm-9">
-                    <select name="jabatan" class="form-control" id="inputJabatan" required>
-                      <option value="">-- Pilih --</option>
-                      <option value="">Admin</option>
-                      <option value="">Customer Service</option>
-                      <option value="">Pengiklan</option>
-                    </select>
+                    <input type="number" name="stok" class="form-control" id="inputStok" placeholder="Stok" required>
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="inputNoTelepon" class="col-sm-3 col-form-label">No.Telepon</label>
+                  <label for="inputHargaBeli" class="col-sm-3 col-form-label">Harga Beli</label>
                   <div class="col-sm-9">
-                    <input type="number" name="no_telepon" class="form-control" id="inputNoTelepon"
-                      placeholder="No Telepon" required>
+                    <input type="number" name="harga_beli" class="form-control" id="inputHargaBeli"
+                      placeholder="Harga Beli" required>
                   </div>
                 </div>
                 <div class="form-group row">
-                  <label for="inputJenisKelamin" class="col-sm-3 col-form-label">Jenis Kelamin</label>
+                  <label for="inputHargaJual" class="col-sm-3 col-form-label">Harga Jual</label>
                   <div class="col-sm-9">
-                    <select name="jenis_kelamin" class="form-control" id="inputJenisKelamin" required>
-                      <option value="">-- Pilih --</option>
-                      <option value="">Laki-Laki</option>
-                      <option value="">Perempuan</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputAlamat" class="col-sm-3 col-form-label">Alamat</label>
-                  <div class="col-sm-9">
-                    <textarea name="alamat" class="form-control" id="inputAlamat">Alamat</textarea>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputTanggalLahir" class="col-sm-3 col-form-label">Tanggal Lahir</label>
-                  <div class="col-sm-9">
-                    <input type="date" name="tanggal_lahir" class="form-control" id="inputTanggalLahir" required>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputTanggalMulaiBekerja" class="col-sm-3 col-form-label">Tanggal Mulai Bekerja</label>
-                  <div class="col-sm-9">
-                    <input type="date" name="tanggal_mulai_bekerja" class="form-control" id="inputTanggalMulaiBekerja"
-                      required>
+                    <input type="number" name="harga_jual" class="form-control" id="inputHargaJual"
+                      placeholder="Harga Jual" required>
                   </div>
                 </div>
               </form>
@@ -319,8 +288,9 @@
         </div>
       </div>
       <!-- Modal END -->
-    </main> <!-- main -->
-    <!-- Main END -->
+  </div>
+  </main> <!-- main -->
+  <!-- Main END -->
 
   </div> <!-- .wrapper -->
   <script src="../assets/js/jquery.min.js"></script>
