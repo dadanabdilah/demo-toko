@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-    <title>Penjualan | Dashboard</title>
+    <title>Penjualan | Albi Media Grup</title>
 
     <!-- Simple bar CSS -->
     <link rel="stylesheet" href="../assets/css/simplebar.css">
@@ -195,6 +195,9 @@
                         <button type="button" class="btn mb-2 btn-primary" data-toggle="modal"
                             data-target="#addModal">Tambah Penjualan
                             +</button>
+                        <button type="button" class="btn mb-2 btn-info" data-toggle="modal"
+                            data-target="#importModal">Import Data Excel
+                            +</button>
                         <div class="row my-4">
                             <!-- Small table -->
                             <div class="col-md-12">
@@ -245,6 +248,7 @@
                     </div> <!-- .col-12 -->
                 </div> <!-- .row -->
             </div> <!-- .container-fluid -->
+            
             <!-- Modal -->
             <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalTitle"
                 aria-hidden="true">
@@ -290,6 +294,37 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn mb-2 btn-secondary" data-dismiss="modal">Tutup</button>
+                            <button type="submit" class="btn mb-2 btn-primary">Simpan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal END -->
+
+            <!-- Modal -->
+            <div class="modal fade" id="importModal" tabindex="-1" role="dialog" aria-labelledby="importModalTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="importModalTitle">Import File Penjualan</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group mb-3">
+                                    <div class="form-group mb-3">
+                                        <label for="example-fileinput">Upload file excel nya.</label>
+                                        <input type="file" id="example-fileinput" class="form-control-file">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-info mb-2" href="#">Download Format</a>
+                            <button type="button" class="btn mb-2 btn-secondary ml-auto" data-dismiss="modal">Tutup</button>
                             <button type="submit" class="btn mb-2 btn-primary">Simpan</button>
                         </div>
                     </div>
